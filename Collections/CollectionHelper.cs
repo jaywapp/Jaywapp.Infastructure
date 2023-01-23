@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Helpers.Collections
+namespace Jaywapp.Infrastructure.Collections
 {
     public static class CollectionHelper
     {

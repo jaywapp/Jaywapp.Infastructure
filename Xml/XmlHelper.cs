@@ -1,6 +1,6 @@
 ﻿using System.Xml.Linq;
 
-namespace Helpers.Xml
+namespace Jaywapp.Infrastructure.Xml
 {
     public static class XmlHelper
     {

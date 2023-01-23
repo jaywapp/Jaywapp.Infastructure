@@ -1,4 +1,4 @@
-﻿using Helpers.System;
+﻿using Jaywapp.Infrastructure.System;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Media;
 
-namespace Helpers.Mathematics
+namespace Jaywapp.Infrastructure.Mathematics
 {
     public static class RandomHelper
     {

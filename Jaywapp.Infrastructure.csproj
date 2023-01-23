@@ -7,8 +7,8 @@
     <ProjectGuid>{2E1CD4A7-769D-436C-A7A1-3894471942B6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Helpers</RootNamespace>
-    <AssemblyName>Helpers</AssemblyName>
+    <RootNamespace>Jaywapp.Infrastructure</RootNamespace>
+    <AssemblyName>Jaywapp.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

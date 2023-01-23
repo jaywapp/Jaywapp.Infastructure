@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Helpers.Collections
+namespace Jaywapp.Infrastructure.Collections
 {
     public static class HashSetHelper
     {
