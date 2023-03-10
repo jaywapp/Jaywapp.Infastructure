@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace Jaywapp.Infrastructure.Filter.Interface
 {
     public interface IFilter
     {
-        /// <summary>
-        /// 객체 타입
-        /// </summary>
-        Type Type { get; }
-
         /// <summary>
         /// 다른 필터와의 연관 관계 연산자
         /// </summary>

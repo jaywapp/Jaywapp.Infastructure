@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Media;
 
-namespace Jaywapp.Infrastructure.System
+namespace Jaywapp.Infrastructure.Sys
 {
     public static class ColorHelper
     {
