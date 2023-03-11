@@ -11,56 +11,56 @@ namespace Jaywapp.Infrastructure
 
     public enum eFilteringOperator
     {
-        [FilterableTargetField(eFilterableTargetProperty.String)]
-        [FilterableTargetField(eFilterableTargetProperty.Number)]
-        [FilterableTargetField(eFilterableTargetProperty.Enum)]
+        [Filterable(eFilteringType.String)]
+        [Filterable(eFilteringType.Number)]
+        [Filterable(eFilteringType.Enum)]
         [Description("=")]
         Equal,
-        [FilterableTargetField(eFilterableTargetProperty.String)]
-        [FilterableTargetField(eFilterableTargetProperty.Number)]
-        [FilterableTargetField(eFilterableTargetProperty.Enum)]
+        [Filterable(eFilteringType.String)]
+        [Filterable(eFilteringType.Number)]
+        [Filterable(eFilteringType.Enum)]
         [Description("≠")]
         NotEqual,
-        [FilterableTargetField(eFilterableTargetProperty.Number)]
+        [Filterable(eFilteringType.Number)]
         [Description("＜")]
         LessThan,
-        [FilterableTargetField(eFilterableTargetProperty.Number)]
+        [Filterable(eFilteringType.Number)]
         [Description("≤")]
         LessEqual,
-        [FilterableTargetField(eFilterableTargetProperty.Number)]
+        [Filterable(eFilteringType.Number)]
         [Description("＞")]
         GreaterThan,
-        [FilterableTargetField(eFilterableTargetProperty.Number)]
+        [Filterable(eFilteringType.Number)]
         [Description("≥")]
         GreaterEqual,
-        [FilterableTargetField(eFilterableTargetProperty.String)]
-        [FilterableTargetField(eFilterableTargetProperty.Number)]
-        [FilterableTargetField(eFilterableTargetProperty.Enum)]
+        [Filterable(eFilteringType.String)]
+        [Filterable(eFilteringType.Number)]
+        [Filterable(eFilteringType.Enum)]
         [Description("정규식")]
         MatchRegex,
-        [FilterableTargetField(eFilterableTargetProperty.String)]
-        [FilterableTargetField(eFilterableTargetProperty.Number)]
-        [FilterableTargetField(eFilterableTargetProperty.Enum)]
+        [Filterable(eFilteringType.String)]
+        [Filterable(eFilteringType.Number)]
+        [Filterable(eFilteringType.Enum)]
         [Description("포함")]
         Contains,
-        [FilterableTargetField(eFilterableTargetProperty.String)]
-        [FilterableTargetField(eFilterableTargetProperty.Number)]
-        [FilterableTargetField(eFilterableTargetProperty.Enum)]
+        [Filterable(eFilteringType.String)]
+        [Filterable(eFilteringType.Number)]
+        [Filterable(eFilteringType.Enum)]
         [Description("미포함")]
         NotContains,
-        [FilterableTargetField(eFilterableTargetProperty.String)]
-        [FilterableTargetField(eFilterableTargetProperty.Number)]
-        [FilterableTargetField(eFilterableTargetProperty.Enum)]
+        [Filterable(eFilteringType.String)]
+        [Filterable(eFilteringType.Number)]
+        [Filterable(eFilteringType.Enum)]
         [Description("시작 문자열")]
         StartsWith,
-        [FilterableTargetField(eFilterableTargetProperty.String)]
-        [FilterableTargetField(eFilterableTargetProperty.Number)]
-        [FilterableTargetField(eFilterableTargetProperty.Enum)]
+        [Filterable(eFilteringType.String)]
+        [Filterable(eFilteringType.Number)]
+        [Filterable(eFilteringType.Enum)]
         [Description("끝 문자열")]
         EndsWith,
     }
 
-    public enum eFilterableTargetProperty
+    public enum eFilteringType
     {
         String,
         Enum,

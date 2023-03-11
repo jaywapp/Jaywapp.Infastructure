@@ -5,11 +5,11 @@ using System.Reflection;
 namespace Jaywapp.Infrastructure.Filter.Attribute
 {
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = true)]
-    public class FilterableTargetFieldAttribute : System.Attribute
+    public class FilterableAttribute : System.Attribute
     {
-        public eFilterableTargetProperty Type { get; }
+        public eFilteringType Type { get; }
 
-        public FilterableTargetFieldAttribute(eFilterableTargetProperty type)
+        public FilterableAttribute(eFilteringType type)
         {
             Type = type;
         }
@@ -17,17 +17,17 @@ namespace Jaywapp.Infrastructure.Filter.Attribute
 
     public static class FilterableTargetFieldExt
     {
-        public static bool TryGetFilterableTargetField(this Enum value, out FilterableTargetFieldAttribute attr)
+        public static bool TryGetFilterableTargetField(this Enum value, out FilterableAttribute attr)
         {
             var field = value.GetType().GetField(value.ToString());
-            attr = field.GetCustomAttribute<FilterableTargetFieldAttribute>();
+            attr = field.GetCustomAttribute<FilterableAttribute>();
             return attr != null;
         }
 
-        public static bool IsTargetField(this Enum value, eFilterableTargetProperty type)
+        public static bool IsTargetField(this Enum value, eFilteringType type)
         {
             var field = value.GetType().GetField(value.ToString());
-            var attrs = field.GetCustomAttributes<FilterableTargetFieldAttribute>().ToList();
+            var attrs = field.GetCustomAttributes<FilterableAttribute>().ToList();
 
             foreach(var attr in attrs)
             {

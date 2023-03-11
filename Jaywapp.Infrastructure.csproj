@@ -49,15 +49,13 @@
     <Compile Include="Collections\CollectionHelper.cs" />
     <Compile Include="Collections\EnumerableHelper.cs" />
     <Compile Include="Collections\HashSetHelper.cs" />
+    <Compile Include="Converter\EnumDescConverter.cs" />
     <Compile Include="Enums.cs" />
-    <Compile Include="Filter\Attribute\FilterableTargetClassAttribute.cs" />
-    <Compile Include="Filter\Attribute\FilterableTargetFieldAttribute.cs" />
-    <Compile Include="Filter\Attribute\FilterableTargetPropertyAttribute.cs" />
+    <Compile Include="Filter\Attribute\FilterableAttribute.cs" />
     <Compile Include="Filter\Interface\IFilter.cs" />
     <Compile Include="Filter\Interface\IFilterPropertySelector.cs" />
     <Compile Include="Filter\Model\Filter.cs" />
     <Compile Include="Filter\Model\FilterGroup.cs" />
-    <Compile Include="Filter\Service\FilterBuilder.cs" />
     <Compile Include="Mathematics\RandomHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sys\ColorHelper.cs" />
