@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 
-namespace Jaywapp.Infrastructure.System
+namespace Jaywapp.Infrastructure.Sys
 {
     public static class EnumHelper
     {

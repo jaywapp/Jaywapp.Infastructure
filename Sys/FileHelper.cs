@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 
-namespace Jaywapp.Infrastructure.System
+namespace Jaywapp.Infrastructure.Sys
 {
     public static class FileHelper
     {

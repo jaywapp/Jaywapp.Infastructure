@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data;
 
-namespace Jaywapp.Infrastructure.System
+namespace Jaywapp.Infrastructure.Sys
 {
     public static class DataTableHelper
     {
