@@ -101,5 +101,25 @@ namespace Jaywapp.Infrastructure.Sys
 
             return false;
         }
+
+        public static bool TryParseValueFromDescription(string description, Type type, out object result)
+        {
+            result = default;
+
+            if (!type.IsEnum) 
+                return false;
+
+            foreach (var field in type.GetFields())
+            {
+                var attribute = field.GetCustomAttribute<DescriptionAttribute>();
+                if (attribute?.Description == description || field.Name == description)
+                {
+                    result = field.GetValue(null);
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 }
