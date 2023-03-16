@@ -46,6 +46,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Block\Interface\IBlock.cs" />
     <Compile Include="Collections\CollectionHelper.cs" />
     <Compile Include="Collections\EnumerableHelper.cs" />
     <Compile Include="Collections\HashSetHelper.cs" />
